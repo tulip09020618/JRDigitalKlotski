@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65170DB12090AB8F003C7E52 /* JRDigitalKlotskiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65170DB02090AB8F003C7E52 /* JRDigitalKlotskiManager.m */; };
+		65170DB42090AC9E003C7E52 /* JRDigitalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65170DB32090AC9E003C7E52 /* JRDigitalModel.m */; };
+		65170DB82090B879003C7E52 /* JRDigitalKlotskiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65170DB72090B879003C7E52 /* JRDigitalKlotskiView.m */; };
+		65170DBB2090B887003C7E52 /* JRDigitalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65170DBA2090B887003C7E52 /* JRDigitalView.m */; };
 		65C2A14120908D4500266000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2A14020908D4500266000 /* AppDelegate.m */; };
 		65C2A14420908D4500266000 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2A14320908D4500266000 /* ViewController.m */; };
 		65C2A14720908D4500266000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65C2A14520908D4500266000 /* Main.storyboard */; };
@@ -35,6 +39,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65170DAF2090AB8F003C7E52 /* JRDigitalKlotskiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRDigitalKlotskiManager.h; sourceTree = "<group>"; };
+		65170DB02090AB8F003C7E52 /* JRDigitalKlotskiManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRDigitalKlotskiManager.m; sourceTree = "<group>"; };
+		65170DB22090AC9E003C7E52 /* JRDigitalModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRDigitalModel.h; sourceTree = "<group>"; };
+		65170DB32090AC9E003C7E52 /* JRDigitalModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRDigitalModel.m; sourceTree = "<group>"; };
+		65170DB52090B419003C7E52 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		65170DB62090B879003C7E52 /* JRDigitalKlotskiView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRDigitalKlotskiView.h; sourceTree = "<group>"; };
+		65170DB72090B879003C7E52 /* JRDigitalKlotskiView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRDigitalKlotskiView.m; sourceTree = "<group>"; };
+		65170DB92090B887003C7E52 /* JRDigitalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRDigitalView.h; sourceTree = "<group>"; };
+		65170DBA2090B887003C7E52 /* JRDigitalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRDigitalView.m; sourceTree = "<group>"; };
+		65170DBC2090BA3B003C7E52 /* Help.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Help.h; sourceTree = "<group>"; };
 		65C2A13C20908D4500266000 /* JRDigitalKlotski.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRDigitalKlotski.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C2A13F20908D4500266000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		65C2A14020908D4500266000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -140,6 +154,8 @@
 		65C2A17120908D8000266000 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				65170DB22090AC9E003C7E52 /* JRDigitalModel.h */,
+				65170DB32090AC9E003C7E52 /* JRDigitalModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,6 +163,10 @@
 		65C2A17220908D9400266000 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				65170DB62090B879003C7E52 /* JRDigitalKlotskiView.h */,
+				65170DB72090B879003C7E52 /* JRDigitalKlotskiView.m */,
+				65170DB92090B887003C7E52 /* JRDigitalView.h */,
+				65170DBA2090B887003C7E52 /* JRDigitalView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,6 +181,10 @@
 		65C2A17420908DA900266000 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				65170DAF2090AB8F003C7E52 /* JRDigitalKlotskiManager.h */,
+				65170DB02090AB8F003C7E52 /* JRDigitalKlotskiManager.m */,
+				65170DB52090B419003C7E52 /* PrefixHeader.pch */,
+				65170DBC2090BA3B003C7E52 /* Help.h */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -304,7 +328,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				65C2A14420908D4500266000 /* ViewController.m in Sources */,
+				65170DB82090B879003C7E52 /* JRDigitalKlotskiView.m in Sources */,
+				65170DBB2090B887003C7E52 /* JRDigitalView.m in Sources */,
 				65C2A14F20908D4C00266000 /* main.m in Sources */,
+				65170DB42090AC9E003C7E52 /* JRDigitalModel.m in Sources */,
+				65170DB12090AB8F003C7E52 /* JRDigitalKlotskiManager.m in Sources */,
 				65C2A14120908D4500266000 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,6 +504,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K57F93BM5Q;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JRDigitalKlotski/Utils/PrefixHeader.pch";
 				INFOPLIST_FILE = JRDigitalKlotski/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -494,6 +523,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K57F93BM5Q;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/JRDigitalKlotski/Utils/PrefixHeader.pch";
 				INFOPLIST_FILE = JRDigitalKlotski/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
