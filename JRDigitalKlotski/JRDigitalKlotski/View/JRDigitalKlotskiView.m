@@ -86,8 +86,38 @@
         JRDigitalView *dView = [[JRDigitalView alloc] init];
         dView.frame = CGRectMake(iCol * self.perWidth, iRow * self.perHeight, self.perWidth, self.perHeight);
         dView.model = model;
+        __weak typeof(self) weakSelf = self;
+        __weak JRDigitalView *weakDView = dView;
+        dView.wantToMove = ^(JRDigitalModel *model) {
+            [weakSelf moveDigitalView:weakDView withModel:model];
+        };
         
         [self addSubview:dView];
+    }
+}
+
+#pragma mark 移动
+- (void)moveDigitalView:(JRDigitalView *)dView withModel:(JRDigitalModel *)model {
+    // 判断是否能移动
+    if ([model canMoveWithEmptyRow:self.emptyRow withEmptyCol:self.emptyCol]) {
+        // 可以移动
+        
+        // 缓存当前model的行列
+        NSInteger oldRow = model.row;
+        NSInteger oldCol = model.col;
+        
+        // 移动model
+        [model moveWithEmptyRow:self.emptyRow withEmptyCol:self.emptyCol];
+        // 更新数据模块的model
+        dView.model = model;
+        // 移动数据模块视图
+        [UIView animateWithDuration:0.1 animations:^{
+            dView.frame = CGRectMake(model.col * self.perWidth, model.row * self.perHeight, self.perWidth, self.perHeight);
+        }];
+        
+        // 重置空白块
+        self.emptyRow = oldRow;
+        self.emptyCol = oldCol;
     }
 }
 

@@ -18,5 +18,10 @@
  */
 @property (nonatomic, strong) JRDigitalModel *model;
 
+/**
+ 想移动
+ */
+@property (nonatomic, strong) void (^wantToMove) (JRDigitalModel *model);
+
 
 @end
