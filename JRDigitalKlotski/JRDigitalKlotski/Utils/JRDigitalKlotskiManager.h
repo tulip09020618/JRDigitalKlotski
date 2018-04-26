@@ -11,6 +11,11 @@
 
 @interface JRDigitalKlotskiManager : NSObject
 
+/**
+ 通关
+ */
+@property (nonatomic, strong) void (^success) (void);
+
 + (JRDigitalKlotskiManager *)manager;
 
 #pragma mark 生成数字华容道视图

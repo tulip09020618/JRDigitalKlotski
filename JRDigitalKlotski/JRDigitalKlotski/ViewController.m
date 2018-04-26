@@ -18,15 +18,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    JRDigitalKlotskiView *dkView = [[JRDigitalKlotskiManager manager] generateDigitalKlotskiViewWithRows:4 withCols:5];
+    JRDigitalKlotskiView *dkView = [[JRDigitalKlotskiManager manager] generateDigitalKlotskiViewWithRows:3 withCols:3];
     dkView.center = self.view.center;
     [self.view addSubview:dkView];
+    
+    [JRDigitalKlotskiManager manager].success = ^{
+        // 通关
+        [self win];
+    };
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark 通关
+- (void)win {
+    [JRUtils showAlertViewWithTitle:@"通关" withMessage:@"恭喜，您已顺利通过此关。" withActionTitle:@"确定" withActionMothed:^{
+        
+    } withCancelTitle:nil withCancelMothed:nil withViewController:self];
 }
 
 

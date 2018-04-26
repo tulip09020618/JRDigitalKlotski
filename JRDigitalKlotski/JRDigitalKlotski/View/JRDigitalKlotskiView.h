@@ -23,6 +23,11 @@
  */
 @property (nonatomic, assign) NSInteger totalCols;
 
+/**
+ 检测成功，顺利通关
+ */
+@property (nonatomic, strong) void (^checkSuccess) (void);
+
 // 初始化
 - (instancetype)initWithRows:(NSInteger)rows withCols:(NSInteger)cols;
 

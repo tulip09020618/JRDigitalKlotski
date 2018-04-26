@@ -86,6 +86,7 @@
         JRDigitalView *dView = [[JRDigitalView alloc] init];
         dView.frame = CGRectMake(iCol * self.perWidth, iRow * self.perHeight, self.perWidth, self.perHeight);
         dView.model = model;
+        dView.tag = i + 100;
         __weak typeof(self) weakSelf = self;
         __weak JRDigitalView *weakDView = dView;
         dView.wantToMove = ^(JRDigitalModel *model) {
@@ -118,6 +119,30 @@
         // 重置空白块
         self.emptyRow = oldRow;
         self.emptyCol = oldCol;
+        
+        // 检测是否通过
+        [self checkAllMode];
+    }
+}
+
+#pragma mark 检测所有数据块是否全部归位
+- (void)checkAllMode {
+    for (NSInteger i = 0; i < self.totalRows * self.totalCols; i ++) {
+        JRDigitalView *dView = (JRDigitalView *)[self viewWithTag:100 + i];
+        if (dView == nil) {
+            // 排除空白块
+            continue;
+        }
+        JRDigitalModel *model = dView.model;
+        if (model.row * self.totalCols + model.col != [model.num integerValue] - 1) {
+            // 未通过检测
+            return;
+        }
+    }
+    
+    // 全部通过检测
+    if (self.checkSuccess) {
+        self.checkSuccess();
     }
 }
 

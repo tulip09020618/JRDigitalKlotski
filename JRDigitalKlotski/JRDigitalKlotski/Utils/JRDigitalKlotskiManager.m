@@ -8,6 +8,12 @@
 
 #import "JRDigitalKlotskiManager.h"
 
+@interface JRDigitalKlotskiManager ()
+
+@property (nonatomic, strong) JRDigitalKlotskiView *dkView;
+
+@end
+
 static JRDigitalKlotskiManager *manager = nil;
 
 @implementation JRDigitalKlotskiManager
@@ -37,6 +43,14 @@ static JRDigitalKlotskiManager *manager = nil;
     JRDigitalKlotskiView *dkView = [[JRDigitalKlotskiView alloc] initWithRows:rows withCols:cols];
     // 生成数据模块视图
     [dkView generateRandomDigitalView:randomNums];
+    __weak typeof(self) weakSelf = self;
+    dkView.checkSuccess = ^{
+        // 通关
+        if (weakSelf.success) {
+            weakSelf.success();
+        }
+    };
+    self.dkView = dkView;
     
     return dkView;
 }

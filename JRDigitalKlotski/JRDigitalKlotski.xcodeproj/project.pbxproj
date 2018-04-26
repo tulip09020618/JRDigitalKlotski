@@ -19,6 +19,7 @@
 		65C2A14F20908D4C00266000 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2A14E20908D4C00266000 /* main.m */; };
 		65C2A15920908D4D00266000 /* JRDigitalKlotskiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2A15820908D4D00266000 /* JRDigitalKlotskiTests.m */; };
 		65C2A16420908D4D00266000 /* JRDigitalKlotskiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2A16320908D4D00266000 /* JRDigitalKlotskiUITests.m */; };
+		65E9827F209166D5009A81A2 /* JRUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E9827E209166D5009A81A2 /* JRUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		65C2A15F20908D4D00266000 /* JRDigitalKlotskiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JRDigitalKlotskiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C2A16320908D4D00266000 /* JRDigitalKlotskiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRDigitalKlotskiUITests.m; sourceTree = "<group>"; };
 		65C2A16520908D4D00266000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65E9827D209166D5009A81A2 /* JRUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRUtils.h; sourceTree = "<group>"; };
+		65E9827E209166D5009A81A2 /* JRUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +188,8 @@
 				65170DB02090AB8F003C7E52 /* JRDigitalKlotskiManager.m */,
 				65170DB52090B419003C7E52 /* PrefixHeader.pch */,
 				65170DBC2090BA3B003C7E52 /* Help.h */,
+				65E9827D209166D5009A81A2 /* JRUtils.h */,
+				65E9827E209166D5009A81A2 /* JRUtils.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -328,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65C2A14420908D4500266000 /* ViewController.m in Sources */,
+				65E9827F209166D5009A81A2 /* JRUtils.m in Sources */,
 				65170DB82090B879003C7E52 /* JRDigitalKlotskiView.m in Sources */,
 				65170DBB2090B887003C7E52 /* JRDigitalView.m in Sources */,
 				65C2A14F20908D4C00266000 /* main.m in Sources */,

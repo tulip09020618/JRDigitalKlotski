@@ -15,4 +15,5 @@
 #endif /* PrefixHeader_pch */
 
 #import "Help.h"
+#import "JRUtils.h"
 #import "JRDigitalKlotskiManager.h"
