@@ -28,6 +28,11 @@
 @property (nonatomic, assign) NSInteger col;
 
 /**
+ 每个数据模型对应的背景图片
+ */
+@property (nonatomic, strong) UIImage *backImg;
+
+/**
  初始化方法
 
  @param num 当前数据模型上的数字

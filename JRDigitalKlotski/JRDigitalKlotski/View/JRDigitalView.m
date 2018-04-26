@@ -21,7 +21,7 @@
         self.backgroundColor = [UIColor clearColor];
         
         self.btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        self.btn.backgroundColor = [UIColor greenColor];
+        self.btn.backgroundColor = [UIColor whiteColor];
     }
     return self;
 }
@@ -34,7 +34,9 @@
         // 设置显示内容
         [self.btn setTitle:model.num forState:UIControlStateNormal];;
         // 设置显示颜色
-        [self.btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [self.btn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+        // 设置背景图片
+        [self.btn setBackgroundImage:model.backImg forState:UIControlStateNormal];
         // 添加点击事件
         [self.btn addTarget:self action:@selector(tapAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:self.btn];

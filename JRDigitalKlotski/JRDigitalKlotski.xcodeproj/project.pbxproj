@@ -20,6 +20,7 @@
 		65C2A15920908D4D00266000 /* JRDigitalKlotskiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2A15820908D4D00266000 /* JRDigitalKlotskiTests.m */; };
 		65C2A16420908D4D00266000 /* JRDigitalKlotskiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2A16320908D4D00266000 /* JRDigitalKlotskiUITests.m */; };
 		65E9827F209166D5009A81A2 /* JRUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E9827E209166D5009A81A2 /* JRUtils.m */; };
+		65E9828120919690009A81A2 /* football.png in Resources */ = {isa = PBXBuildFile; fileRef = 65E9828020919690009A81A2 /* football.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		65C2A16520908D4D00266000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65E9827D209166D5009A81A2 /* JRUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRUtils.h; sourceTree = "<group>"; };
 		65E9827E209166D5009A81A2 /* JRUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRUtils.m; sourceTree = "<group>"; };
+		65E9828020919690009A81A2 /* football.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 		65C2A17520908DB600266000 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				65E9828020919690009A81A2 /* football.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			files = (
 				65C2A14C20908D4C00266000 /* LaunchScreen.storyboard in Resources */,
 				65C2A14920908D4C00266000 /* Assets.xcassets in Resources */,
+				65E9828120919690009A81A2 /* football.png in Resources */,
 				65C2A14720908D4500266000 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
