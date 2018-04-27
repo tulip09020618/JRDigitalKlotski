@@ -29,7 +29,7 @@ typedef NS_ENUM(NSUInteger, MODE_TYPE) {
 /**
  选择的图片名称(自定义模式)
  */
-@property (nonatomic, strong) NSString *imgName;
+@property (nonatomic, strong) NSString *customImgName;
 
 /**
  难度等级(自定义模式)

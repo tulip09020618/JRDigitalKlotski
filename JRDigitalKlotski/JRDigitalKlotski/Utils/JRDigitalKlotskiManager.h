@@ -22,11 +22,12 @@
 /**
  生成数字华容道视图
 
+ @param imgName 使用的图片名称
  @param rows 总行数
  @param cols 总列数
  @param complexity 复杂度：移动次数
  @return 数字华容道视图
  */
-- (JRDigitalKlotskiView *)generateDigitalKlotskiViewWithRows:(NSInteger)rows withCols:(NSInteger)cols withComplexity:(NSInteger)complexity;
+- (JRDigitalKlotskiView *)generateDigitalKlotskiViewWithImg:(NSString *)imgName withRows:(NSInteger)rows withCols:(NSInteger)cols withComplexity:(NSInteger)complexity;
 
 @end

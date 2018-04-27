@@ -39,7 +39,16 @@ static JRDigitalKlotskiManager *manager = nil;
 }
 
 #pragma mark 生成数字华容道视图
-- (JRDigitalKlotskiView *)generateDigitalKlotskiViewWithRows:(NSInteger)rows withCols:(NSInteger)cols withComplexity:(NSInteger)complexity {
+/**
+ 生成数字华容道视图
+ 
+ @param imgName 使用的图片名称
+ @param rows 总行数
+ @param cols 总列数
+ @param complexity 复杂度：移动次数
+ @return 数字华容道视图
+ */
+- (JRDigitalKlotskiView *)generateDigitalKlotskiViewWithImg:(NSString *)imgName withRows:(NSInteger)rows withCols:(NSInteger)cols withComplexity:(NSInteger)complexity {
     
     self.complexity = complexity;
     
@@ -48,7 +57,7 @@ static JRDigitalKlotskiManager *manager = nil;
     NSLog(@"随机数组：%@", randomNums);
     
     // 数字华容道视图
-    JRDigitalKlotskiView *dkView = [[JRDigitalKlotskiView alloc] initWithRows:rows withCols:cols];
+    JRDigitalKlotskiView *dkView = [[JRDigitalKlotskiView alloc] initWithImg:imgName withRows:rows withCols:cols];
     // 生成数据模块视图
     [dkView generateRandomDigitalView:randomNums];
     __weak typeof(self) weakSelf = self;

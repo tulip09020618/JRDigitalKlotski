@@ -12,6 +12,11 @@
 @interface JRLevelDetailsViewController ()
 
 /**
+ 要使用的图片
+ */
+@property (nonatomic, assign) NSString *imgName;
+
+/**
  总行数
  */
 @property (nonatomic, assign) NSInteger rows;
@@ -115,7 +120,7 @@
     NSInteger cols = rows;
     
     // 使用选择图片
-    NSString *imgName = self.imgName;
+    NSString *imgName = self.customImgName;
     
     // 创建数字华容道视图
     [self createDigitalKlotskiViewWithImg:imgName withRows:rows withCols:cols];
@@ -123,13 +128,14 @@
 
 // 创建数字华容道视图
 - (void)createDigitalKlotskiViewWithImg:(NSString *)imgName withRows:(NSInteger)rows withCols:(NSInteger)cols {
+    self.imgName = imgName;
     self.rows = rows;
     self.cols = cols;
     
     // 设置复杂度
     self.complexity = (self.rows + self.cols) / 2.0 * 100;
     
-    JRDigitalKlotskiView *dkView = [[JRDigitalKlotskiManager manager] generateDigitalKlotskiViewWithRows:self.rows withCols:self.cols withComplexity:self.complexity];
+    JRDigitalKlotskiView *dkView = [[JRDigitalKlotskiManager manager] generateDigitalKlotskiViewWithImg:imgName withRows:rows withCols:cols withComplexity:self.complexity];
     dkView.center = CGPointMake(SCREEN_WIDTH / 2.0, SCREEN_HEIGHT / 2.0);
     [self.view addSubview:dkView];
     self.dkView = dkView;
@@ -146,7 +152,7 @@
 - (void)reset {
     [self.dkView removeFromSuperview];
     
-    JRDigitalKlotskiView *dkView = [[JRDigitalKlotskiManager manager] generateDigitalKlotskiViewWithRows:self.rows withCols:self.cols withComplexity:self.complexity];
+    JRDigitalKlotskiView *dkView = [[JRDigitalKlotskiManager manager] generateDigitalKlotskiViewWithImg:self.imgName withRows:self.rows withCols:self.cols withComplexity:self.complexity];
     dkView.center = self.view.center;
     [self.view addSubview:dkView];
     self.dkView = dkView;

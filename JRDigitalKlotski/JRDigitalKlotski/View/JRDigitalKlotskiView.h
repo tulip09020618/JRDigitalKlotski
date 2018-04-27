@@ -29,7 +29,7 @@
 @property (nonatomic, strong) void (^checkSuccess) (void);
 
 // 初始化
-- (instancetype)initWithRows:(NSInteger)rows withCols:(NSInteger)cols;
+- (instancetype)initWithImg:(NSString *)imgName withRows:(NSInteger)rows withCols:(NSInteger)cols;
 
 #pragma mark 生成随机数据模块
 /**

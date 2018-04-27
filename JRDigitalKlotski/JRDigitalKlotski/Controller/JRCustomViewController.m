@@ -29,10 +29,10 @@
     // 初始化数据源
     self.imgsArr = [NSMutableArray arrayWithArray:@[
                                                     @"football",
-                                                    @"football",
-                                                    @"football",
-                                                    @"football",
-                                                    @"football",
+                                                    @"football01",
+                                                    @"football02",
+                                                    @"football03",
+                                                    @"football04",
                                                     ]];
     
     // 添加图片

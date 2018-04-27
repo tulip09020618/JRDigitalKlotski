@@ -21,6 +21,11 @@
 @property (nonatomic, assign) CGFloat perHeight;
 
 /**
+ 要分割的图片名称
+ */
+@property (nonatomic, strong) NSString *imgName;
+
+/**
  空白块所在行
  */
 @property (nonatomic, assign) NSInteger emptyRow;
@@ -34,8 +39,10 @@
 
 @implementation JRDigitalKlotskiView
 
-- (instancetype)initWithRows:(NSInteger)rows withCols:(NSInteger)cols {
+- (instancetype)initWithImg:(NSString *)imgName withRows:(NSInteger)rows withCols:(NSInteger)cols {
     if (self = [super init]) {
+        self.imgName = imgName;
+        
         self.totalRows = rows;
         self.totalCols = cols;
         
@@ -65,7 +72,7 @@
     }
     
     // 获取切割图片
-    UIImage *originalImg = [UIImage imageNamed:@"football"];
+    UIImage *originalImg = [UIImage imageNamed:self.imgName];
     NSArray *imgsArr = [JRUtils cutImage:originalImg withRows:self.totalRows withCols:self.totalCols];
     if (imgsArr.count != self.totalRows * self.totalCols) {
         NSLog(@"获取切割图片错误");

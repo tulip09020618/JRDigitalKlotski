@@ -101,7 +101,7 @@
     
     JRLevelDetailsViewController *detailsVC = [[JRLevelDetailsViewController alloc] initWithNibName:@"JRLevelDetailsViewController" bundle:nil];
     detailsVC.type = MODE_TYPE_CUSTOM;
-    detailsVC.imgName = self.imgName;
+    detailsVC.customImgName = self.imgName;
     detailsVC.customLevel = index + 3;
     [self presentViewController:detailsVC animated:NO completion:nil];
     
