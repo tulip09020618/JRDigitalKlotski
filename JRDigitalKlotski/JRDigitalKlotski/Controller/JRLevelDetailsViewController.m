@@ -144,18 +144,8 @@
 #pragma mark 通关
 - (void)win {
     [JRUtils showAlertViewWithTitle:@"通关" withMessage:@"恭喜，您已顺利通过此关。" withActionTitle:@"确定" withActionMothed:^{
-        [self reset];
+        [self goback:nil];
     } withCancelTitle:nil withCancelMothed:nil withViewController:self];
-}
-
-#pragma mark 重置
-- (void)reset {
-    [self.dkView removeFromSuperview];
-    
-    JRDigitalKlotskiView *dkView = [[JRDigitalKlotskiManager manager] generateDigitalKlotskiViewWithImg:self.imgName withRows:self.rows withCols:self.cols withComplexity:self.complexity];
-    dkView.center = self.view.center;
-    [self.view addSubview:dkView];
-    self.dkView = dkView;
 }
 
 - (IBAction)goback:(id)sender {
