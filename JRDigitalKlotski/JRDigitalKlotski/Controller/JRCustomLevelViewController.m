@@ -34,6 +34,9 @@
                                                     [JRUtils cutImage:originalImg withRows:5 withCols:5],
                                                     [JRUtils cutImage:originalImg withRows:6 withCols:6],
                                                     [JRUtils cutImage:originalImg withRows:7 withCols:7],
+                                                    [JRUtils cutImage:originalImg withRows:8 withCols:8],
+                                                    [JRUtils cutImage:originalImg withRows:9 withCols:9],
+                                                    [JRUtils cutImage:originalImg withRows:10 withCols:10],
                                                     ]];
     
     // 添加图片

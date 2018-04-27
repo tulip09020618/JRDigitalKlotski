@@ -40,25 +40,99 @@
     
     if (self.type == MODE_TYPE_LEVEL) {
         self.titleLabel.text = [NSString stringWithFormat:@"第%ld关", self.levelIndex+1];
+        // 创建数字华容道视图
+        [self createDigitalKlotskiViewWithLevel];
     }else if (self.type == MODE_TYPE_FREEDOM) {
         self.titleLabel.text = @"自由模式";
+        // 创建数字华容道视图
+        [self createDigitalKlotskiViewWithFreedom];
     }else {
         self.titleLabel.text = @"自定义模式";
+        // 创建数字华容道视图
+        [self createDigitalKlotskiViewWithCustom];
     }
     
-    self.rows = 5;
-    self.cols = 5;
+    [JRDigitalKlotskiManager manager].success = ^{
+        // 通关
+        [self win];
+    };
+}
+
+#pragma mark 生成数字华容道视图
+// 闯关模式
+- (void)createDigitalKlotskiViewWithLevel {
+    // 1 ~ 100 关，设置不同难度
+    // 最简单:3x3, 最复杂:10x10
+    NSInteger rows = 3;
+    NSInteger cols = rows;
+    
+    if (self.levelIndex < 10) {
+        rows = 3;
+    }else if (self.levelIndex < 20) {
+        rows = 4;
+    }else if (self.levelIndex < 45) {
+        rows = 5;
+    }else if (self.levelIndex < 65) {
+        rows = 6;
+    }else if (self.levelIndex < 78) {
+        rows = 7;
+    }else if (self.levelIndex < 88) {
+        rows = 8;
+    }else if (self.levelIndex < 95) {
+        rows = 9;
+    }else {
+        rows = 10;
+    }
+    cols = rows;
+    
+    // 使用默认图片
+    NSString *imgName = @"football";
+    
+    // 创建数字华容道视图
+    [self createDigitalKlotskiViewWithImg:imgName withRows:rows withCols:cols];
+}
+
+// 自由模式
+- (void)createDigitalKlotskiViewWithFreedom {
+    // 随机生成3~10之间的数，确定难度
+    NSInteger random = arc4random() % 8 + 3;
+    
+    // 确定行列
+    NSInteger rows = random;
+    NSInteger cols = rows;
+    
+    // 使用默认图片
+    NSString *imgName = @"football";
+    
+    // 创建数字华容道视图
+    [self createDigitalKlotskiViewWithImg:imgName withRows:rows withCols:cols];
+}
+
+// 自定义模式
+- (void)createDigitalKlotskiViewWithCustom {
+    // 根据选择难度，确定行和列
+    NSInteger rows = self.customLevel;
+    NSInteger cols = rows;
+    
+    // 使用选择图片
+    NSString *imgName = self.imgName;
+    
+    // 创建数字华容道视图
+    [self createDigitalKlotskiViewWithImg:imgName withRows:rows withCols:cols];
+}
+
+// 创建数字华容道视图
+- (void)createDigitalKlotskiViewWithImg:(NSString *)imgName withRows:(NSInteger)rows withCols:(NSInteger)cols {
+    self.rows = rows;
+    self.cols = cols;
+    
+    // 设置复杂度
     self.complexity = (self.rows + self.cols) / 2.0 * 100;
     
     JRDigitalKlotskiView *dkView = [[JRDigitalKlotskiManager manager] generateDigitalKlotskiViewWithRows:self.rows withCols:self.cols withComplexity:self.complexity];
     dkView.center = CGPointMake(SCREEN_WIDTH / 2.0, SCREEN_HEIGHT / 2.0);
     [self.view addSubview:dkView];
     self.dkView = dkView;
-    
-    [JRDigitalKlotskiManager manager].success = ^{
-        // 通关
-        [self win];
-    };
 }
 
 #pragma mark 通关
