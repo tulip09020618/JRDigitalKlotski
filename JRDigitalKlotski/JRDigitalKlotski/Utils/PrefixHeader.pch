@@ -15,5 +15,7 @@
 #endif /* PrefixHeader_pch */
 
 #import "Help.h"
+#import "UIColor+HEX.h"
+#import "JRUserDefaultsManager.h"
 #import "JRUtils.h"
 #import "JRDigitalKlotskiManager.h"

@@ -65,7 +65,8 @@
     }
     
     // 获取切割图片
-    NSArray *imgsArr = [self getCutPicture];
+    UIImage *originalImg = [UIImage imageNamed:@"football"];
+    NSArray *imgsArr = [JRUtils cutImage:originalImg withRows:self.totalRows withCols:self.totalCols];
     if (imgsArr.count != self.totalRows * self.totalCols) {
         NSLog(@"获取切割图片错误");
         return;
@@ -154,38 +155,6 @@
     if (self.checkSuccess) {
         self.checkSuccess();
     }
-}
-
-#pragma mark 切割图片
-- (NSArray<UIImage *> *)getCutPicture {
-    
-    // 原图
-    UIImage *originalImg = [UIImage imageNamed:@"football"];
-    // 原图需要切割的行数和列数
-    NSInteger rows = self.totalRows;
-    NSInteger cols = self.totalCols;
-    // 切割后的每一个小图片的大小
-    CGSize size = CGSizeMake(originalImg.size.width/cols, originalImg.size.height/rows);
-    
-    // 存放切割图片的数组
-    NSMutableArray *imgsArr = [NSMutableArray arrayWithCapacity:0];
-    // 切割图片
-    for (NSInteger i = 0; i < rows * cols; i ++) {
-        // 当前行
-        NSInteger iRow = i / cols;
-        // 当前列
-        NSInteger iCol = i % cols;
-        // 创建上下文(大小，是否透明，缩放)
-        UIGraphicsBeginImageContextWithOptions(size, NO, 0);
-        // 设置截图原点(由于上下文坐标系与图片自身坐标系是相反的，所以绘制坐标需要取反)
-        [originalImg drawAtPoint:CGPointMake(- size.width * iCol, - size.height * iRow)];
-        // 获取图片
-        UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
-        // 保存图片
-        [imgsArr addObject:img];
-    }
-    
-    return imgsArr;
 }
 
 @end

@@ -20,4 +20,15 @@
               withCancelMothed:(void (^)(void))cancelMothed
             withViewController:(UIViewController *)viewController;
 
+#pragma mark 切割图片(将一张图片，切割成m行n列的小图片)
+/**
+ 切割图片(将一张图片，切割成m行n列的小图片)
+
+ @param originalImg 原始图片
+ @param rows 切割的总行数
+ @param cols 切割的总列数
+ @return 切割后的图片数组
+ */
++ (NSArray<UIImage *> *)cutImage:(UIImage *)originalImg withRows:(NSInteger)rows withCols:(NSInteger)cols;
+
 @end

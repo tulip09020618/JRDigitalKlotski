@@ -17,7 +17,124 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWI-HP-bQG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFX-jB-INb">
+                                        <rect key="frame" x="127" y="386" width="120" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.32549019610000002" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="C7V-My-477"/>
+                                            <constraint firstAttribute="height" constant="40" id="Z5H-6B-Uns"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="自由模式">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="presentToFreedomMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wDL-Px-1DX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="273-Ob-ayJ">
+                                        <rect key="frame" x="127" y="446" width="120" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.32549019610000002" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="hGa-mm-QTr"/>
+                                            <constraint firstAttribute="width" constant="120" id="kv8-2d-KDj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="自定义模式">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="presentToCustomMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i1H-L3-rSg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Q4-fh-Tk4">
+                                        <rect key="frame" x="127" y="506" width="120" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.32549019610000002" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="oUC-sO-QcQ"/>
+                                            <constraint firstAttribute="height" constant="40" id="u75-BO-JmH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="玩法介绍">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="presentToIntroduction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mNg-FY-bn3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3M-co-M2V">
+                                        <rect key="frame" x="127" y="326" width="120" height="40"/>
+                                        <color key="backgroundColor" red="1" green="0.32549019610000002" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="bEV-V8-tsZ"/>
+                                            <constraint firstAttribute="width" constant="120" id="u5g-G0-kmq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="闯关模式">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="presentToSelectLevelMode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="27s-6S-ztn"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="解救足球" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUu-Za-op1">
+                                        <rect key="frame" x="115.66666666666667" y="124" width="145.33333333333331" height="43"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="sFX-jB-INb" firstAttribute="top" secondItem="Q3M-co-M2V" secondAttribute="bottom" constant="20" id="0Vm-lD-Qhe"/>
+                                    <constraint firstItem="273-Ob-ayJ" firstAttribute="centerX" secondItem="Q3M-co-M2V" secondAttribute="centerX" id="4fR-ui-yG5"/>
+                                    <constraint firstItem="sFX-jB-INb" firstAttribute="centerX" secondItem="SWI-HP-bQG" secondAttribute="centerX" id="AhX-Ld-xEU"/>
+                                    <constraint firstItem="sFX-jB-INb" firstAttribute="centerX" secondItem="Q3M-co-M2V" secondAttribute="centerX" id="OJt-m5-3NB"/>
+                                    <constraint firstItem="SUu-Za-op1" firstAttribute="top" secondItem="2GZ-9b-VLM" secondAttribute="top" constant="80" id="QDo-ea-0sb"/>
+                                    <constraint firstItem="2Q4-fh-Tk4" firstAttribute="top" secondItem="273-Ob-ayJ" secondAttribute="bottom" constant="20" id="S89-l6-cX7"/>
+                                    <constraint firstItem="sFX-jB-INb" firstAttribute="centerY" secondItem="SWI-HP-bQG" secondAttribute="centerY" id="SIo-sc-rGY"/>
+                                    <constraint firstItem="273-Ob-ayJ" firstAttribute="top" secondItem="sFX-jB-INb" secondAttribute="bottom" constant="20" id="SdZ-vp-9vf"/>
+                                    <constraint firstItem="SUu-Za-op1" firstAttribute="centerX" secondItem="SWI-HP-bQG" secondAttribute="centerX" id="bTd-cB-U8q"/>
+                                    <constraint firstItem="2Q4-fh-Tk4" firstAttribute="centerX" secondItem="Q3M-co-M2V" secondAttribute="centerX" id="jSl-NE-JBE"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="2GZ-9b-VLM"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SWI-HP-bQG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6L1-pp-EC2"/>
+                            <constraint firstItem="SWI-HP-bQG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="LvN-Fm-UCd"/>
+                            <constraint firstAttribute="bottom" secondItem="SWI-HP-bQG" secondAttribute="bottom" id="P0d-h2-dYy"/>
+                            <constraint firstItem="SWI-HP-bQG" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kJW-k2-SRW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
