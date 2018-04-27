@@ -9,9 +9,10 @@
 #import "JRCustomLevelViewController.h"
 #import "JRLevelDetailsViewController.h"
 
-@interface JRCustomLevelViewController ()
+@interface JRCustomLevelViewController ()<UIScrollViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UILabel *levelLabel;
 
 /**
  存放图片的数组
@@ -25,6 +26,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.scrollView.delegate = self;
     
     // 初始化数据源
     UIImage *originalImg = [UIImage imageNamed:self.imgName];
@@ -109,6 +112,13 @@
 
 - (IBAction)goback:(id)sender {
     [self dismissViewControllerAnimated:NO completion:nil];
+}
+
+#pragma mark - UIScrollViewDelegate
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    NSInteger index = scrollView.contentOffset.x / SCREEN_WIDTH;
+    
+    self.levelLabel.text = [NSString stringWithFormat:@"难度：%ldx%ld", index + 3, index + 3];
 }
 
 @end

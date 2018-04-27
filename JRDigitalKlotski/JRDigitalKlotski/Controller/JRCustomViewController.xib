@@ -28,9 +28,9 @@
                         <constraint firstAttribute="width" secondItem="eIx-jU-Gqy" secondAttribute="height" id="7q8-y5-CCV"/>
                     </constraints>
                 </scrollView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="左右滚动选择图片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b26-eF-NqF">
-                    <rect key="frame" x="15" y="531" width="139" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="左右滚动选择图片" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b26-eF-NqF">
+                    <rect key="frame" x="15" y="531" width="345" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <color key="textColor" red="0.59215686270000001" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -59,6 +59,7 @@
                 <constraint firstItem="EIb-e3-3L7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EQ5-h9-Ywh"/>
                 <constraint firstItem="b26-eF-NqF" firstAttribute="top" secondItem="eIx-jU-Gqy" secondAttribute="bottom" constant="10" id="PS8-b3-6VL"/>
                 <constraint firstItem="00N-a0-VXH" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="RX4-Bd-bif"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="b26-eF-NqF" secondAttribute="trailing" constant="15" id="U5q-5p-TRA"/>
                 <constraint firstItem="eIx-jU-Gqy" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="aN5-Ju-JJg"/>
                 <constraint firstItem="eIx-jU-Gqy" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="c0X-CO-zYW"/>
                 <constraint firstItem="EIb-e3-3L7" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="40" id="eJi-QU-XPw"/>

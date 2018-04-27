@@ -23,8 +23,8 @@
                 <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tut-hu-tmi">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="规则介绍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koo-IU-YNg">
-                            <rect key="frame" x="115" y="40" width="145.5" height="31.5"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="玩法介绍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koo-IU-YNg">
+                            <rect key="frame" x="115" y="40" width="146" height="32"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="32" id="v81-E6-BxL"/>
                             </constraints>
@@ -44,9 +44,8 @@
                             </connections>
                         </button>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Px0-5A-FJh">
-                            <rect key="frame" x="15" y="101.5" width="345" height="535.5"/>
-                            <color key="backgroundColor" red="0.41593424479166669" green="0.76659947637500003" blue="0.3269314236111111" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <mutableString key="text">
+                            <rect key="frame" x="15" y="102" width="345" height="535"/>
+                            <string key="text">
 一、闯关模式
         闯关模式共有100关，难度逐渐递增。每一关开始移动后会自动计时，记录闯关使用时间，并记录通过本关的最短时间。通过最新一关后，才能解锁下一关。
 
@@ -57,8 +56,8 @@
         进入自定义模式，首先会提示您选择一张您喜欢的图片，然后会提现您选择您喜欢的难度，然后您就可以探索您自己定义的数字华容道了。
 
 四、玩法介绍
-        通过点数字华容道中的每个小块移动，如果被点击的小块与空白块横向或竖向相邻，则可以移动，否则不可以移动，直到所有的小块都被移动到正确的位置，游戏通关。</mutableString>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        通过点数字华容道中的每个小块移动，如果被点击的小块与空白块横向或竖向相邻，则可以移动，否则不可以移动，直到所有的小块都被移动到正确的位置，游戏通关。</string>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             <userDefinedRuntimeAttributes>
