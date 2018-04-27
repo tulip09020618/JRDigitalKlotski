@@ -34,7 +34,7 @@
         // 设置显示内容
         [self.btn setTitle:model.num forState:UIControlStateNormal];;
         // 设置显示颜色
-        [self.btn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+        [self.btn setTitleColor:[UIColor clearColor] forState:UIControlStateNormal];
         // 设置背景图片
         [self.btn setBackgroundImage:model.backImg forState:UIControlStateNormal];
         // 添加点击事件
@@ -49,6 +49,26 @@
 - (void)tapAction:(id)sender {
     if (self.wantToMove) {
         self.wantToMove(self.model);
+    }
+}
+
+/**
+ 是否显示数字
+ 
+ @param show 是否显示
+ */
+- (void)showNum:(BOOL)show {
+    if (self.btn == nil) {
+        return;
+    }
+    
+    // 设置显示颜色
+    if (show) {
+        // 显示
+        [self.btn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+    }else {
+        // 隐藏
+        [self.btn setTitleColor:[UIColor clearColor] forState:UIControlStateNormal];
     }
 }
 

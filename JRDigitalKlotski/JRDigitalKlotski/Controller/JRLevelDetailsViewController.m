@@ -158,4 +158,11 @@
     [self presentViewController:introductionVC animated:YES completion:nil];
     
 }
+
+#pragma mark 设置是否显示数字(默认为不显示)
+- (IBAction)tapSwitch:(id)sender {
+    UISwitch *s = (UISwitch *)sender;
+    [[JRDigitalKlotskiManager manager] showNums:s.on];
+}
+
 @end

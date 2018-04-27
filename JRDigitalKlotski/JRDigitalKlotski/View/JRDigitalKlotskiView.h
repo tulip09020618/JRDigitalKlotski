@@ -37,4 +37,11 @@
  */
 - (void)generateRandomDigitalView:(NSArray<NSString *> *)randonNums;
 
+/**
+ 是否显示每个数据块上的数字
+
+ @param show 是否显示
+ */
+- (void)showNums:(BOOL)show;
+
 @end

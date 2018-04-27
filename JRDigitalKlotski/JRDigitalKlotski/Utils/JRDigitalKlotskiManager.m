@@ -136,4 +136,13 @@ static JRDigitalKlotskiManager *manager = nil;
     return numsArr;
 }
 
+/**
+ 设置是否显示每张图片上的数字
+ 
+ @param show 是否显示
+ */
+- (void)showNums:(BOOL)show {
+    [self.dkView showNums:show];
+}
+
 @end

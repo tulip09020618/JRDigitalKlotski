@@ -22,13 +22,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sFX-jB-INb">
-                                        <rect key="frame" x="127" y="386" width="120" height="40"/>
+                                        <rect key="frame" x="97" y="386" width="180" height="40"/>
                                         <color key="backgroundColor" red="1" green="0.32549019610000002" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="C7V-My-477"/>
                                             <constraint firstAttribute="height" constant="40" id="Z5H-6B-Uns"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="自由模式">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -43,13 +42,12 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="273-Ob-ayJ">
-                                        <rect key="frame" x="127" y="446" width="120" height="40"/>
+                                        <rect key="frame" x="97.333333333333314" y="446" width="180" height="40"/>
                                         <color key="backgroundColor" red="1" green="0.32549019610000002" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="hGa-mm-QTr"/>
-                                            <constraint firstAttribute="width" constant="120" id="kv8-2d-KDj"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="自定义模式">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -64,13 +62,12 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Q4-fh-Tk4">
-                                        <rect key="frame" x="127" y="506" width="120" height="40"/>
+                                        <rect key="frame" x="97" y="506" width="180" height="40"/>
                                         <color key="backgroundColor" red="1" green="0.32549019610000002" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="oUC-sO-QcQ"/>
                                             <constraint firstAttribute="height" constant="40" id="u75-BO-JmH"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="玩法介绍">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -85,13 +82,13 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3M-co-M2V">
-                                        <rect key="frame" x="127" y="326" width="120" height="40"/>
+                                        <rect key="frame" x="97" y="326" width="180" height="40"/>
                                         <color key="backgroundColor" red="1" green="0.32549019610000002" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="bEV-V8-tsZ"/>
-                                            <constraint firstAttribute="width" constant="120" id="u5g-G0-kmq"/>
+                                            <constraint firstAttribute="width" constant="180" id="u5g-G0-kmq"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="闯关模式">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -111,19 +108,30 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="数字华容道" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71t-n9-CcP">
+                                        <rect key="frame" x="142.33333333333334" y="177" width="92" height="21.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" red="0.31764705879999999" green="0.31764705879999999" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="sFX-jB-INb" firstAttribute="top" secondItem="Q3M-co-M2V" secondAttribute="bottom" constant="20" id="0Vm-lD-Qhe"/>
                                     <constraint firstItem="273-Ob-ayJ" firstAttribute="centerX" secondItem="Q3M-co-M2V" secondAttribute="centerX" id="4fR-ui-yG5"/>
+                                    <constraint firstItem="sFX-jB-INb" firstAttribute="width" secondItem="Q3M-co-M2V" secondAttribute="width" id="6kg-eN-2Aq"/>
+                                    <constraint firstItem="71t-n9-CcP" firstAttribute="top" secondItem="SUu-Za-op1" secondAttribute="bottom" constant="10" id="7S0-9j-w61"/>
                                     <constraint firstItem="sFX-jB-INb" firstAttribute="centerX" secondItem="SWI-HP-bQG" secondAttribute="centerX" id="AhX-Ld-xEU"/>
+                                    <constraint firstItem="273-Ob-ayJ" firstAttribute="width" secondItem="Q3M-co-M2V" secondAttribute="width" id="ELs-3c-tav"/>
                                     <constraint firstItem="sFX-jB-INb" firstAttribute="centerX" secondItem="Q3M-co-M2V" secondAttribute="centerX" id="OJt-m5-3NB"/>
                                     <constraint firstItem="SUu-Za-op1" firstAttribute="top" secondItem="2GZ-9b-VLM" secondAttribute="top" constant="80" id="QDo-ea-0sb"/>
                                     <constraint firstItem="2Q4-fh-Tk4" firstAttribute="top" secondItem="273-Ob-ayJ" secondAttribute="bottom" constant="20" id="S89-l6-cX7"/>
                                     <constraint firstItem="sFX-jB-INb" firstAttribute="centerY" secondItem="SWI-HP-bQG" secondAttribute="centerY" id="SIo-sc-rGY"/>
                                     <constraint firstItem="273-Ob-ayJ" firstAttribute="top" secondItem="sFX-jB-INb" secondAttribute="bottom" constant="20" id="SdZ-vp-9vf"/>
+                                    <constraint firstItem="2Q4-fh-Tk4" firstAttribute="width" secondItem="Q3M-co-M2V" secondAttribute="width" id="aUC-uq-06s"/>
                                     <constraint firstItem="SUu-Za-op1" firstAttribute="centerX" secondItem="SWI-HP-bQG" secondAttribute="centerX" id="bTd-cB-U8q"/>
                                     <constraint firstItem="2Q4-fh-Tk4" firstAttribute="centerX" secondItem="Q3M-co-M2V" secondAttribute="centerX" id="jSl-NE-JBE"/>
+                                    <constraint firstItem="71t-n9-CcP" firstAttribute="centerX" secondItem="SWI-HP-bQG" secondAttribute="centerX" id="nTT-nS-gez"/>
                                 </constraints>
                                 <viewLayoutGuide key="safeArea" id="2GZ-9b-VLM"/>
                             </view>

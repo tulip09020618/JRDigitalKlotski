@@ -67,7 +67,7 @@ static NSInteger levelCount = 100;
     if (index + 1 > currentLevelIndex) {
         // 关卡大于当前关卡，则为锁定状态
         UIView *lockBackView = [[UIView alloc] initWithFrame:backView.bounds];
-        lockBackView.backgroundColor = [UIColor colorWithHex:0x000000 andAlpha:0.3];
+        lockBackView.backgroundColor = [UIColor colorWithHex:0xffffff andAlpha:0.3];
         lockBackView.tag = 300 + index;
         [backView addSubview:lockBackView];
         UIImageView *lockImgView = [[UIImageView alloc] initWithFrame:CGRectMake(5, 5, 32, 32)];

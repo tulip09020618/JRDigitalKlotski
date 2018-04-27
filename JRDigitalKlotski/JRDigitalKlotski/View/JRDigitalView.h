@@ -23,5 +23,11 @@
  */
 @property (nonatomic, strong) void (^wantToMove) (JRDigitalModel *model);
 
+/**
+ 是否显示数字
+
+ @param show 是否显示
+ */
+- (void)showNum:(BOOL)show;
 
 @end

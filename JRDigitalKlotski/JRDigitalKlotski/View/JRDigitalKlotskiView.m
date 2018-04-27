@@ -164,4 +164,22 @@
     }
 }
 
+/**
+ 是否显示每个数据块上的数字
+ 
+ @param show 是否显示
+ */
+- (void)showNums:(BOOL)show {
+    for (NSInteger i = 0; i < self.totalRows * self.totalCols; i ++) {
+        JRDigitalView *dView = (JRDigitalView *)[self viewWithTag:100 + i];
+        if (dView == nil) {
+            // 排除空白块
+            continue;
+        }
+
+        // 设置数字显示颜色
+        [dView showNum:show];
+    }
+}
+
 @end

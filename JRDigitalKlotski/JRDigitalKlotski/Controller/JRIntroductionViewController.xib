@@ -45,9 +45,9 @@
                         </button>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Px0-5A-FJh">
                             <rect key="frame" x="15" y="102" width="345" height="535"/>
-                            <string key="text">
+                            <mutableString key="text">
 一、闯关模式
-        闯关模式共有100关，难度逐渐递增。每一关开始移动后会自动计时，记录闯关使用时间，并记录通过本关的最短时间。通过最新一关后，才能解锁下一关。
+        闯关模式共有100关，难度逐渐递增。通过最新一关后，才能解锁下一关。
 
 二、自由模式
         进入自由模式后，会随机确定一个难度，并自动生成对应的数字华容道。
@@ -56,7 +56,10 @@
         进入自定义模式，首先会提示您选择一张您喜欢的图片，然后会提现您选择您喜欢的难度，然后您就可以探索您自己定义的数字华容道了。
 
 四、玩法介绍
-        通过点数字华容道中的每个小块移动，如果被点击的小块与空白块横向或竖向相邻，则可以移动，否则不可以移动，直到所有的小块都被移动到正确的位置，游戏通关。</string>
+        通过点数字华容道中的每个小块移动，如果被点击的小块与空白块横向或竖向相邻，则可以移动，否则不可以移动，直到所有的小块都被移动到正确的位置，游戏通关。
+
+五、声明
+        本游戏为免费游戏，不会向您以任何方式收取任何费用，设置关卡只是为了逐步提升游戏难度，增加趣味性。</mutableString>
                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

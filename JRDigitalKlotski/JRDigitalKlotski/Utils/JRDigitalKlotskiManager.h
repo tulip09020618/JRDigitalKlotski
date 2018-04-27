@@ -30,4 +30,11 @@
  */
 - (JRDigitalKlotskiView *)generateDigitalKlotskiViewWithImg:(NSString *)imgName withRows:(NSInteger)rows withCols:(NSInteger)cols withComplexity:(NSInteger)complexity;
 
+/**
+ 设置是否显示每张图片上的数字
+ 
+ @param show 是否显示
+ */
+- (void)showNums:(BOOL)show;
+
 @end

@@ -40,6 +40,7 @@
 		65F033D02092B98400965DBF /* football01.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033CC2092B98400965DBF /* football01.png */; };
 		65F033D32092C25400965DBF /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033D12092C25400965DBF /* help.png */; };
 		65F033D42092C25400965DBF /* goback.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033D22092C25400965DBF /* goback.png */; };
+		65F033DA2092C62B00965DBF /* selectLevel_lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033D92092C62B00965DBF /* selectLevel_lock.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		65F033CC2092B98400965DBF /* football01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football01.png; sourceTree = "<group>"; };
 		65F033D12092C25400965DBF /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
 		65F033D22092C25400965DBF /* goback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goback.png; sourceTree = "<group>"; };
+		65F033D92092C62B00965DBF /* selectLevel_lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectLevel_lock.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +265,7 @@
 		65C2A17520908DB600266000 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				65F033D92092C62B00965DBF /* selectLevel_lock.png */,
 				65F033D22092C25400965DBF /* goback.png */,
 				65F033D12092C25400965DBF /* help.png */,
 				65F033CC2092B98400965DBF /* football01.png */,
@@ -391,6 +394,7 @@
 				65F033CF2092B98400965DBF /* football02.png in Resources */,
 				65EF162F2091F9A90062750B /* JRLevelDetailsViewController.xib in Resources */,
 				65E9828120919690009A81A2 /* football.png in Resources */,
+				65F033DA2092C62B00965DBF /* selectLevel_lock.png in Resources */,
 				65EF162A2091F9920062750B /* JRSelectLevelViewController.xib in Resources */,
 				65C2A14720908D4500266000 /* Main.storyboard in Resources */,
 				65F033C82092A47200965DBF /* JRCustomLevelViewController.xib in Resources */,
