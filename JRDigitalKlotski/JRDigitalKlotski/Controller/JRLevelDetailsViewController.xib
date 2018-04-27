@@ -32,9 +32,9 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Mo-1t-T14">
-                    <rect key="frame" x="15" y="40" width="50" height="30"/>
+                    <rect key="frame" x="15" y="20" width="50" height="50"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="30" id="IbG-Of-Ltd"/>
+                        <constraint firstAttribute="height" constant="50" id="IbG-Of-Ltd"/>
                         <constraint firstAttribute="width" constant="50" id="Qot-c4-nlc"/>
                     </constraints>
                     <state key="normal" backgroundImage="goback.png"/>
@@ -43,7 +43,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khU-DJ-Wal">
-                    <rect key="frame" x="330" y="40" width="30" height="30"/>
+                    <rect key="frame" x="330" y="30" width="30" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="30" id="Rya-YF-vWZ"/>
                         <constraint firstAttribute="width" secondItem="khU-DJ-Wal" secondAttribute="height" id="weW-op-Eb8"/>
@@ -61,14 +61,14 @@
                 <constraint firstItem="4qt-Ag-feN" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="B05-7j-c6c"/>
                 <constraint firstItem="4qt-Ag-feN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="n1O-W7-FIQ"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="khU-DJ-Wal" secondAttribute="trailing" constant="15" id="nNM-vm-u32"/>
-                <constraint firstItem="3Mo-1t-T14" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="sBE-Gz-QaO"/>
+                <constraint firstItem="3Mo-1t-T14" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="sBE-Gz-QaO"/>
                 <constraint firstItem="3Mo-1t-T14" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="vX4-iC-FgS"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>
     </objects>
     <resources>
-        <image name="goback.png" width="50" height="36"/>
-        <image name="help.png" width="100" height="100"/>
+        <image name="goback.png" width="512" height="512"/>
+        <image name="help.png" width="256" height="256"/>
     </resources>
 </document>

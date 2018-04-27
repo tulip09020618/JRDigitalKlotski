@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "JRSelectLevelViewController.h"
-#import "JRFreedomViewController.h"
 #import "JRCustomViewController.h"
 #import "JRIntroductionViewController.h"
 #import "JRLevelDetailsViewController.h"
@@ -35,9 +34,6 @@
 
 #pragma mark 自由模式
 - (IBAction)presentToFreedomMode:(id)sender {
-//    JRFreedomViewController *freedomVC = [[JRFreedomViewController alloc] initWithNibName:@"JRFreedomViewController" bundle:nil];
-//    [self presentViewController:freedomVC animated:NO completion:nil];
-    
     JRLevelDetailsViewController *detailsVC = [[JRLevelDetailsViewController alloc] initWithNibName:@"JRLevelDetailsViewController" bundle:nil];
     detailsVC.type = MODE_TYPE_FREEDOM;
     [self presentViewController:detailsVC animated:NO completion:nil];

@@ -53,26 +53,7 @@
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nzy-v0-I7c">
                                     <rect key="frame" x="0.0" y="521" width="375" height="146"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7E-oB-6vL">
-                                            <rect key="frame" x="162.5" y="48" width="50" height="50"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="50" id="UrY-wG-Iux"/>
-                                                <constraint firstAttribute="width" constant="50" id="Yoq-Td-dRV"/>
-                                            </constraints>
-                                            <state key="normal" title="首页">
-                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </state>
-                                            <connections>
-                                                <action selector="goBack:" destination="-1" eventType="touchUpInside" id="iVG-W5-jxJ"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstItem="h7E-oB-6vL" firstAttribute="centerY" secondItem="nzy-v0-I7c" secondAttribute="centerY" id="2ga-tu-x3h"/>
-                                        <constraint firstItem="h7E-oB-6vL" firstAttribute="centerX" secondItem="nzy-v0-I7c" secondAttribute="centerX" id="H4g-NS-Wva"/>
-                                    </constraints>
                                 </view>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -90,13 +71,26 @@
                                 <constraint firstAttribute="trailing" secondItem="pp2-VM-upk" secondAttribute="trailing" id="sAN-kY-FRu"/>
                             </constraints>
                         </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i6W-OA-EU3">
+                            <rect key="frame" x="15" y="20" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="FZd-PL-xtH"/>
+                                <constraint firstAttribute="height" constant="50" id="hlT-M0-w7D"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="goback.png"/>
+                            <connections>
+                                <action selector="goBack:" destination="-1" eventType="touchUpInside" id="Uvu-jd-FV7"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="DHM-Py-UOF" firstAttribute="leading" secondItem="1SP-hX-Tjo" secondAttribute="leading" id="1QX-8l-pkP"/>
                         <constraint firstItem="DHM-Py-UOF" firstAttribute="top" secondItem="1SP-hX-Tjo" secondAttribute="top" id="Hp4-OJ-abd"/>
                         <constraint firstAttribute="bottom" secondItem="DHM-Py-UOF" secondAttribute="bottom" id="Qck-uW-a2v"/>
+                        <constraint firstItem="i6W-OA-EU3" firstAttribute="top" secondItem="nuX-ML-thJ" secondAttribute="top" id="cKw-3v-1WM"/>
                         <constraint firstAttribute="trailing" secondItem="DHM-Py-UOF" secondAttribute="trailing" id="sfA-XB-4jX"/>
+                        <constraint firstItem="i6W-OA-EU3" firstAttribute="leading" secondItem="nuX-ML-thJ" secondAttribute="leading" constant="15" id="wLE-JO-t9T"/>
                     </constraints>
                     <viewLayoutGuide key="safeArea" id="nuX-ML-thJ"/>
                 </view>
@@ -111,4 +105,7 @@
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>
     </objects>
+    <resources>
+        <image name="goback.png" width="512" height="512"/>
+    </resources>
 </document>

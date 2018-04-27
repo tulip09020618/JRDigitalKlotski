@@ -27,21 +27,19 @@
 		65EF162F2091F9A90062750B /* JRLevelDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EF162D2091F9A90062750B /* JRLevelDetailsViewController.xib */; };
 		65EF16322091FBF30062750B /* UIColor+HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EF16312091FBF30062750B /* UIColor+HEX.m */; };
 		65EF16352091FC510062750B /* JRUserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EF16332091FC510062750B /* JRUserDefaultsManager.m */; };
-		65EF16392091FE240062750B /* JRFreedomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EF16372091FE240062750B /* JRFreedomViewController.m */; };
-		65EF163A2091FE240062750B /* JRFreedomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EF16382091FE240062750B /* JRFreedomViewController.xib */; };
 		65EF163E2091FE370062750B /* JRCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EF163C2091FE370062750B /* JRCustomViewController.m */; };
 		65EF163F2091FE370062750B /* JRCustomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EF163D2091FE370062750B /* JRCustomViewController.xib */; };
 		65EF16432091FE480062750B /* JRIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EF16412091FE480062750B /* JRIntroductionViewController.m */; };
 		65EF16442091FE480062750B /* JRIntroductionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EF16422091FE480062750B /* JRIntroductionViewController.xib */; };
 		65EF1648209202550062750B /* levelBack.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 65EF1645209202550062750B /* levelBack.jpeg */; };
-		65EF1649209202550062750B /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 65EF1646209202550062750B /* help.png */; };
-		65EF164A209202550062750B /* goback.png in Resources */ = {isa = PBXBuildFile; fileRef = 65EF1647209202550062750B /* goback.png */; };
 		65F033C72092A47200965DBF /* JRCustomLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F033C52092A47200965DBF /* JRCustomLevelViewController.m */; };
 		65F033C82092A47200965DBF /* JRCustomLevelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F033C62092A47200965DBF /* JRCustomLevelViewController.xib */; };
 		65F033CD2092B98400965DBF /* football03.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033C92092B98300965DBF /* football03.png */; };
 		65F033CE2092B98400965DBF /* football04.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033CA2092B98400965DBF /* football04.png */; };
 		65F033CF2092B98400965DBF /* football02.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033CB2092B98400965DBF /* football02.png */; };
 		65F033D02092B98400965DBF /* football01.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033CC2092B98400965DBF /* football01.png */; };
+		65F033D32092C25400965DBF /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033D12092C25400965DBF /* help.png */; };
+		65F033D42092C25400965DBF /* goback.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033D22092C25400965DBF /* goback.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,9 +99,6 @@
 		65EF16312091FBF30062750B /* UIColor+HEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HEX.m"; sourceTree = "<group>"; };
 		65EF16332091FC510062750B /* JRUserDefaultsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRUserDefaultsManager.m; sourceTree = "<group>"; };
 		65EF16342091FC510062750B /* JRUserDefaultsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRUserDefaultsManager.h; sourceTree = "<group>"; };
-		65EF16362091FE240062750B /* JRFreedomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRFreedomViewController.h; sourceTree = "<group>"; };
-		65EF16372091FE240062750B /* JRFreedomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRFreedomViewController.m; sourceTree = "<group>"; };
-		65EF16382091FE240062750B /* JRFreedomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JRFreedomViewController.xib; sourceTree = "<group>"; };
 		65EF163B2091FE370062750B /* JRCustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRCustomViewController.h; sourceTree = "<group>"; };
 		65EF163C2091FE370062750B /* JRCustomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRCustomViewController.m; sourceTree = "<group>"; };
 		65EF163D2091FE370062750B /* JRCustomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JRCustomViewController.xib; sourceTree = "<group>"; };
@@ -111,8 +106,6 @@
 		65EF16412091FE480062750B /* JRIntroductionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRIntroductionViewController.m; sourceTree = "<group>"; };
 		65EF16422091FE480062750B /* JRIntroductionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JRIntroductionViewController.xib; sourceTree = "<group>"; };
 		65EF1645209202550062750B /* levelBack.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = levelBack.jpeg; sourceTree = "<group>"; };
-		65EF1646209202550062750B /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
-		65EF1647209202550062750B /* goback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goback.png; sourceTree = "<group>"; };
 		65F033C42092A47200965DBF /* JRCustomLevelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRCustomLevelViewController.h; sourceTree = "<group>"; };
 		65F033C52092A47200965DBF /* JRCustomLevelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRCustomLevelViewController.m; sourceTree = "<group>"; };
 		65F033C62092A47200965DBF /* JRCustomLevelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JRCustomLevelViewController.xib; sourceTree = "<group>"; };
@@ -120,6 +113,8 @@
 		65F033CA2092B98400965DBF /* football04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football04.png; sourceTree = "<group>"; };
 		65F033CB2092B98400965DBF /* football02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football02.png; sourceTree = "<group>"; };
 		65F033CC2092B98400965DBF /* football01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football01.png; sourceTree = "<group>"; };
+		65F033D12092C25400965DBF /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
+		65F033D22092C25400965DBF /* goback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goback.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,9 +230,6 @@
 				65EF162B2091F9A90062750B /* JRLevelDetailsViewController.h */,
 				65EF162C2091F9A90062750B /* JRLevelDetailsViewController.m */,
 				65EF162D2091F9A90062750B /* JRLevelDetailsViewController.xib */,
-				65EF16362091FE240062750B /* JRFreedomViewController.h */,
-				65EF16372091FE240062750B /* JRFreedomViewController.m */,
-				65EF16382091FE240062750B /* JRFreedomViewController.xib */,
 				65EF163B2091FE370062750B /* JRCustomViewController.h */,
 				65EF163C2091FE370062750B /* JRCustomViewController.m */,
 				65EF163D2091FE370062750B /* JRCustomViewController.xib */,
@@ -271,12 +263,12 @@
 		65C2A17520908DB600266000 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				65F033D22092C25400965DBF /* goback.png */,
+				65F033D12092C25400965DBF /* help.png */,
 				65F033CC2092B98400965DBF /* football01.png */,
 				65F033CB2092B98400965DBF /* football02.png */,
 				65F033C92092B98300965DBF /* football03.png */,
 				65F033CA2092B98400965DBF /* football04.png */,
-				65EF1647209202550062750B /* goback.png */,
-				65EF1646209202550062750B /* help.png */,
 				65EF1645209202550062750B /* levelBack.jpeg */,
 				65E9828020919690009A81A2 /* football.png */,
 			);
@@ -389,8 +381,10 @@
 			files = (
 				65F033D02092B98400965DBF /* football01.png in Resources */,
 				65C2A14C20908D4C00266000 /* LaunchScreen.storyboard in Resources */,
+				65F033D42092C25400965DBF /* goback.png in Resources */,
 				65F033CD2092B98400965DBF /* football03.png in Resources */,
 				65EF163F2091FE370062750B /* JRCustomViewController.xib in Resources */,
+				65F033D32092C25400965DBF /* help.png in Resources */,
 				65C2A14920908D4C00266000 /* Assets.xcassets in Resources */,
 				65EF1648209202550062750B /* levelBack.jpeg in Resources */,
 				65F033CE2092B98400965DBF /* football04.png in Resources */,
@@ -398,11 +392,8 @@
 				65EF162F2091F9A90062750B /* JRLevelDetailsViewController.xib in Resources */,
 				65E9828120919690009A81A2 /* football.png in Resources */,
 				65EF162A2091F9920062750B /* JRSelectLevelViewController.xib in Resources */,
-				65EF163A2091FE240062750B /* JRFreedomViewController.xib in Resources */,
-				65EF164A209202550062750B /* goback.png in Resources */,
 				65C2A14720908D4500266000 /* Main.storyboard in Resources */,
 				65F033C82092A47200965DBF /* JRCustomLevelViewController.xib in Resources */,
-				65EF1649209202550062750B /* help.png in Resources */,
 				65EF16442091FE480062750B /* JRIntroductionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -437,7 +428,6 @@
 				65F033C72092A47200965DBF /* JRCustomLevelViewController.m in Sources */,
 				65C2A14F20908D4C00266000 /* main.m in Sources */,
 				65EF163E2091FE370062750B /* JRCustomViewController.m in Sources */,
-				65EF16392091FE240062750B /* JRFreedomViewController.m in Sources */,
 				65EF162E2091F9A90062750B /* JRLevelDetailsViewController.m in Sources */,
 				65EF16352091FC510062750B /* JRUserDefaultsManager.m in Sources */,
 				65170DB42090AC9E003C7E52 /* JRDigitalModel.m in Sources */,
