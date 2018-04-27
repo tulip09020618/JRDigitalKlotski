@@ -31,7 +31,6 @@
 		65EF163F2091FE370062750B /* JRCustomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EF163D2091FE370062750B /* JRCustomViewController.xib */; };
 		65EF16432091FE480062750B /* JRIntroductionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EF16412091FE480062750B /* JRIntroductionViewController.m */; };
 		65EF16442091FE480062750B /* JRIntroductionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65EF16422091FE480062750B /* JRIntroductionViewController.xib */; };
-		65EF1648209202550062750B /* levelBack.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 65EF1645209202550062750B /* levelBack.jpeg */; };
 		65F033C72092A47200965DBF /* JRCustomLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F033C52092A47200965DBF /* JRCustomLevelViewController.m */; };
 		65F033C82092A47200965DBF /* JRCustomLevelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65F033C62092A47200965DBF /* JRCustomLevelViewController.xib */; };
 		65F033CD2092B98400965DBF /* football03.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033C92092B98300965DBF /* football03.png */; };
@@ -41,6 +40,12 @@
 		65F033D32092C25400965DBF /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033D12092C25400965DBF /* help.png */; };
 		65F033D42092C25400965DBF /* goback.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033D22092C25400965DBF /* goback.png */; };
 		65F033DA2092C62B00965DBF /* selectLevel_lock.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033D92092C62B00965DBF /* selectLevel_lock.png */; };
+		65F033DE2092D14B00965DBF /* football05.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033DB2092D14A00965DBF /* football05.png */; };
+		65F033DF2092D14B00965DBF /* football06.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033DC2092D14A00965DBF /* football06.png */; };
+		65F033E02092D14B00965DBF /* levelBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033DD2092D14A00965DBF /* levelBack.png */; };
+		65F033E22092D88000965DBF /* selectBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033E12092D88000965DBF /* selectBack.png */; };
+		65F033E42092E12000965DBF /* launchImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033E32092E12000965DBF /* launchImg.png */; };
+		7F4AEA1441809205DF89CE9A /* libPods-JRDigitalKlotski.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 684F43B01F2F7403A8D5FC72 /* libPods-JRDigitalKlotski.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		181F759080968FFF35FA6846 /* Pods-JRDigitalKlotski.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRDigitalKlotski.release.xcconfig"; path = "Pods/Target Support Files/Pods-JRDigitalKlotski/Pods-JRDigitalKlotski.release.xcconfig"; sourceTree = "<group>"; };
 		65170DAF2090AB8F003C7E52 /* JRDigitalKlotskiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRDigitalKlotskiManager.h; sourceTree = "<group>"; };
 		65170DB02090AB8F003C7E52 /* JRDigitalKlotskiManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRDigitalKlotskiManager.m; sourceTree = "<group>"; };
 		65170DB22090AC9E003C7E52 /* JRDigitalModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRDigitalModel.h; sourceTree = "<group>"; };
@@ -106,7 +112,6 @@
 		65EF16402091FE480062750B /* JRIntroductionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRIntroductionViewController.h; sourceTree = "<group>"; };
 		65EF16412091FE480062750B /* JRIntroductionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRIntroductionViewController.m; sourceTree = "<group>"; };
 		65EF16422091FE480062750B /* JRIntroductionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JRIntroductionViewController.xib; sourceTree = "<group>"; };
-		65EF1645209202550062750B /* levelBack.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = levelBack.jpeg; sourceTree = "<group>"; };
 		65F033C42092A47200965DBF /* JRCustomLevelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRCustomLevelViewController.h; sourceTree = "<group>"; };
 		65F033C52092A47200965DBF /* JRCustomLevelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRCustomLevelViewController.m; sourceTree = "<group>"; };
 		65F033C62092A47200965DBF /* JRCustomLevelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JRCustomLevelViewController.xib; sourceTree = "<group>"; };
@@ -117,6 +122,13 @@
 		65F033D12092C25400965DBF /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
 		65F033D22092C25400965DBF /* goback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = goback.png; sourceTree = "<group>"; };
 		65F033D92092C62B00965DBF /* selectLevel_lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectLevel_lock.png; sourceTree = "<group>"; };
+		65F033DB2092D14A00965DBF /* football05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football05.png; sourceTree = "<group>"; };
+		65F033DC2092D14A00965DBF /* football06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football06.png; sourceTree = "<group>"; };
+		65F033DD2092D14A00965DBF /* levelBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelBack.png; sourceTree = "<group>"; };
+		65F033E12092D88000965DBF /* selectBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectBack.png; sourceTree = "<group>"; };
+		65F033E32092E12000965DBF /* launchImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImg.png; sourceTree = "<group>"; };
+		684F43B01F2F7403A8D5FC72 /* libPods-JRDigitalKlotski.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JRDigitalKlotski.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E732DE43E5E3E4B78A2D06B8 /* Pods-JRDigitalKlotski.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRDigitalKlotski.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JRDigitalKlotski/Pods-JRDigitalKlotski.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F4AEA1441809205DF89CE9A /* libPods-JRDigitalKlotski.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +157,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F807C9E3638328A6AF12F5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E732DE43E5E3E4B78A2D06B8 /* Pods-JRDigitalKlotski.debug.xcconfig */,
+				181F759080968FFF35FA6846 /* Pods-JRDigitalKlotski.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		65C2A13320908D4500266000 = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +173,8 @@
 				65C2A15720908D4D00266000 /* JRDigitalKlotskiTests */,
 				65C2A16220908D4D00266000 /* JRDigitalKlotskiUITests */,
 				65C2A13D20908D4500266000 /* Products */,
+				2F807C9E3638328A6AF12F5B /* Pods */,
+				AE09D149058879F83DF772F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -265,6 +289,11 @@
 		65C2A17520908DB600266000 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				65F033E32092E12000965DBF /* launchImg.png */,
+				65F033E12092D88000965DBF /* selectBack.png */,
+				65F033DB2092D14A00965DBF /* football05.png */,
+				65F033DC2092D14A00965DBF /* football06.png */,
+				65F033DD2092D14A00965DBF /* levelBack.png */,
 				65F033D92092C62B00965DBF /* selectLevel_lock.png */,
 				65F033D22092C25400965DBF /* goback.png */,
 				65F033D12092C25400965DBF /* help.png */,
@@ -272,10 +301,17 @@
 				65F033CB2092B98400965DBF /* football02.png */,
 				65F033C92092B98300965DBF /* football03.png */,
 				65F033CA2092B98400965DBF /* football04.png */,
-				65EF1645209202550062750B /* levelBack.jpeg */,
 				65E9828020919690009A81A2 /* football.png */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		AE09D149058879F83DF772F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				684F43B01F2F7403A8D5FC72 /* libPods-JRDigitalKlotski.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,9 +321,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65C2A16820908D4E00266000 /* Build configuration list for PBXNativeTarget "JRDigitalKlotski" */;
 			buildPhases = (
+				D99D0969CE13A2F1B85EDAA9 /* [CP] Check Pods Manifest.lock */,
 				65C2A13820908D4500266000 /* Sources */,
 				65C2A13920908D4500266000 /* Frameworks */,
 				65C2A13A20908D4500266000 /* Resources */,
+				8B1237D46F2D01CFFBAE2817 /* [CP] Embed Pods Frameworks */,
+				B2D202B7921F69CE87A29DCD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -389,15 +428,19 @@
 				65EF163F2091FE370062750B /* JRCustomViewController.xib in Resources */,
 				65F033D32092C25400965DBF /* help.png in Resources */,
 				65C2A14920908D4C00266000 /* Assets.xcassets in Resources */,
-				65EF1648209202550062750B /* levelBack.jpeg in Resources */,
 				65F033CE2092B98400965DBF /* football04.png in Resources */,
+				65F033E42092E12000965DBF /* launchImg.png in Resources */,
 				65F033CF2092B98400965DBF /* football02.png in Resources */,
+				65F033E02092D14B00965DBF /* levelBack.png in Resources */,
 				65EF162F2091F9A90062750B /* JRLevelDetailsViewController.xib in Resources */,
 				65E9828120919690009A81A2 /* football.png in Resources */,
 				65F033DA2092C62B00965DBF /* selectLevel_lock.png in Resources */,
+				65F033DF2092D14B00965DBF /* football06.png in Resources */,
+				65F033DE2092D14B00965DBF /* football05.png in Resources */,
 				65EF162A2091F9920062750B /* JRSelectLevelViewController.xib in Resources */,
 				65C2A14720908D4500266000 /* Main.storyboard in Resources */,
 				65F033C82092A47200965DBF /* JRCustomLevelViewController.xib in Resources */,
+				65F033E22092D88000965DBF /* selectBack.png in Resources */,
 				65EF16442091FE480062750B /* JRIntroductionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +460,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B1237D46F2D01CFFBAE2817 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JRDigitalKlotski/Pods-JRDigitalKlotski-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2D202B7921F69CE87A29DCD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JRDigitalKlotski/Pods-JRDigitalKlotski-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D99D0969CE13A2F1B85EDAA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JRDigitalKlotski-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		65C2A13820908D4500266000 /* Sources */ = {
@@ -604,10 +698,11 @@
 		};
 		65C2A16920908D4E00266000 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E732DE43E5E3E4B78A2D06B8 /* Pods-JRDigitalKlotski.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K57F93BM5Q;
+				DEVELOPMENT_TEAM = 5GT4W9MRBY;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JRDigitalKlotski/Utils/PrefixHeader.pch";
 				INFOPLIST_FILE = JRDigitalKlotski/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -615,7 +710,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRDigitalKlotski;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tulipJRDigitalKlotski.JRDigitalKlotski;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -623,10 +718,11 @@
 		};
 		65C2A16A20908D4E00266000 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 181F759080968FFF35FA6846 /* Pods-JRDigitalKlotski.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K57F93BM5Q;
+				DEVELOPMENT_TEAM = 5GT4W9MRBY;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/JRDigitalKlotski/Utils/PrefixHeader.pch";
 				INFOPLIST_FILE = JRDigitalKlotski/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -634,7 +730,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tulip.JRDigitalKlotski;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tulipJRDigitalKlotski.JRDigitalKlotski;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

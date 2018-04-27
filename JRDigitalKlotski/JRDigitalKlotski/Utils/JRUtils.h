@@ -31,4 +31,7 @@
  */
 + (NSArray<UIImage *> *)cutImage:(UIImage *)originalImg withRows:(NSInteger)rows withCols:(NSInteger)cols;
 
+#pragma mark 下载文件
++ (void)downLoadFile;
+
 @end

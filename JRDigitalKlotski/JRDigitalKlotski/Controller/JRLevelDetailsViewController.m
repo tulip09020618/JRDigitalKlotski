@@ -143,7 +143,13 @@
 
 #pragma mark 通关
 - (void)win {
-    [JRUtils showAlertViewWithTitle:@"通关" withMessage:@"恭喜，您已顺利通过此关。" withActionTitle:@"确定" withActionMothed:^{
+    if (self.type == MODE_TYPE_LEVEL) {
+        if (self.success) {
+            self.success(self.levelIndex);
+        }
+    }
+    
+    [JRUtils showAlertViewWithTitle:@"解救成功" withMessage:@"门锁已开，足球已被顺利救出。您真是太聪明了，赶快带着足球继续探索吧。" withActionTitle:@"好的" withActionMothed:^{
         [self goback:nil];
     } withCancelTitle:nil withCancelMothed:nil withViewController:self];
 }

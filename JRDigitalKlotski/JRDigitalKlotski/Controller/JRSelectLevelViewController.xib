@@ -28,6 +28,9 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHM-Py-UOF">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="0XK-Xr-E3L">
+                                    <rect key="frame" x="-0.5" y="145.5" width="375" height="375"/>
+                                </imageView>
                                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85x-xL-GKg">
                                     <rect key="frame" x="0.0" y="146" width="375" height="375"/>
                                     <constraints>
@@ -60,13 +63,17 @@
                             <constraints>
                                 <constraint firstItem="85x-xL-GKg" firstAttribute="leading" secondItem="DHM-Py-UOF" secondAttribute="leading" id="9tY-kP-bRc"/>
                                 <constraint firstItem="pp2-VM-upk" firstAttribute="leading" secondItem="DHM-Py-UOF" secondAttribute="leading" id="BKT-lL-RgE"/>
+                                <constraint firstItem="0XK-Xr-E3L" firstAttribute="height" secondItem="85x-xL-GKg" secondAttribute="height" id="Bqe-pd-ogI"/>
                                 <constraint firstAttribute="trailing" secondItem="85x-xL-GKg" secondAttribute="trailing" id="CY3-kY-8e6"/>
                                 <constraint firstItem="85x-xL-GKg" firstAttribute="centerY" secondItem="DHM-Py-UOF" secondAttribute="centerY" id="DaQ-CI-LAT"/>
                                 <constraint firstAttribute="bottom" secondItem="nzy-v0-I7c" secondAttribute="bottom" id="F11-3G-Uuj"/>
                                 <constraint firstItem="85x-xL-GKg" firstAttribute="top" secondItem="pp2-VM-upk" secondAttribute="bottom" id="Mpo-xI-Att"/>
                                 <constraint firstAttribute="trailing" secondItem="nzy-v0-I7c" secondAttribute="trailing" id="RNs-tC-txw"/>
                                 <constraint firstItem="pp2-VM-upk" firstAttribute="top" secondItem="DHM-Py-UOF" secondAttribute="top" constant="20" id="XMQ-Jq-E18"/>
+                                <constraint firstItem="0XK-Xr-E3L" firstAttribute="centerY" secondItem="85x-xL-GKg" secondAttribute="centerY" id="aOr-JS-qnT"/>
+                                <constraint firstItem="0XK-Xr-E3L" firstAttribute="centerX" secondItem="85x-xL-GKg" secondAttribute="centerX" id="d5Y-Ae-7BW"/>
                                 <constraint firstItem="nzy-v0-I7c" firstAttribute="top" secondItem="85x-xL-GKg" secondAttribute="bottom" id="ene-7U-Hj7"/>
+                                <constraint firstItem="0XK-Xr-E3L" firstAttribute="width" secondItem="85x-xL-GKg" secondAttribute="width" id="l8x-3g-DrO"/>
                                 <constraint firstItem="nzy-v0-I7c" firstAttribute="leading" secondItem="DHM-Py-UOF" secondAttribute="leading" id="rAY-2V-5oF"/>
                                 <constraint firstAttribute="trailing" secondItem="pp2-VM-upk" secondAttribute="trailing" id="sAN-kY-FRu"/>
                             </constraints>
@@ -107,5 +114,6 @@
     </objects>
     <resources>
         <image name="goback.png" width="512" height="512"/>
+        <image name="selectBack.png" width="432" height="432"/>
     </resources>
 </document>
