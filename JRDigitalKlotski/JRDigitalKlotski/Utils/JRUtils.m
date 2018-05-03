@@ -67,9 +67,10 @@
 
 #pragma mark 下载文件
 // 下载文件：https://github.com/tulip09020618/JRFootballMaze/blob/master/configure.text
-+ (void)downLoadFile {
-    // 文件下载失败重试次数
-    static NSInteger downLoadCount = 3;
++ (void)downLoadFile:(void (^) (NSString *jpushAppId))block {
+    
+    // 先移除上报极光token记录
+    [JRUserDefaultsManager removeUploadJPushTokenRecord];
     
     // 文件路径
     NSString *filePath = @"https://digitalklotski-1256547180.cos.ap-beijing.myqcloud.com/configure.txt";
@@ -112,21 +113,19 @@
             NSLog(NSLocalizedString(@"文件下载失败：%@", nil), error);
             //文件下载失败
             
-            downLoadCount --;
-            if (downLoadCount > 0) {
-                [self downLoadFile];
-            }else {
-                downLoadCount = 3;
-            }
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                
+                // n秒后异步执行这里的代码...
+                [self downLoadFile:block];
+                
+            });
             
         }else {
             //文件下载完成
             NSLog(NSLocalizedString(@"文件下载完成，最终的文件路径：%@", nil),filePath);
             
-            downLoadCount = 3;
-            
             // 解析文件内容
-            [weakSelf parseFileContent:filePath.path];
+            [weakSelf parseFileContent:filePath.path withBlock:block];
         }
         
     }];
@@ -137,7 +136,7 @@
 }
 
 #pragma mark 解析文件
-+ (void)parseFileContent:(NSString *)filePath {
++ (void)parseFileContent:(NSString *)filePath withBlock:(void (^) (NSString *jpushAppId))block {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     if (![fileManager fileExistsAtPath:filePath]) {
         NSLog(@"文件路径不存在");
@@ -166,6 +165,8 @@
     CGFloat time = 3.0;
     // 跳转地址
     NSString *address = @"";
+    // 极光appkey
+    NSString *jpushAppKey = @"";
     
     NSString *parseStr = [content substringWithRange:NSMakeRange(r1.location + 1, r2.location - r1.location - 1)];
     NSArray *strArr = [parseStr componentsSeparatedByString:@","];
@@ -194,7 +195,18 @@
             }else if (itemStr.length > range.length) {
                 address = [itemStr substringFromIndex:range.length];
             }
+        }else if ([itemStr hasPrefix:@"jpushAppKey"]) {
+            NSRange range = [itemStr rangeOfString:@"jpushAppKey:"];
+            if (range.location == NSNotFound) {
+                continue;
+            }else if (itemStr.length > range.length) {
+                jpushAppKey = [itemStr substringFromIndex:range.length];
+            }
         }
+    }
+    
+    if (block) {
+        block(jpushAppKey);
     }
     
     // 解析完成，跳转
@@ -218,6 +230,19 @@
     
     if (![[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:address]]) {
         // 不能打开链接
+        return;
+    }
+    
+    // 判断是否已上报
+    if (![JRUserDefaultsManager getUploadJPushTokenRecord]) {
+        // 未上报,1s后重新检查
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            
+            // n秒后异步执行这里的代码...
+            [self openAddress:address jump:jump time:time];
+            
+        });
+        
         return;
     }
     

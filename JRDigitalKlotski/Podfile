@@ -3,5 +3,6 @@ platform :ios, "9.0"
 target 'JRDigitalKlotski' do
 
 pod 'AFNetworking'
+pod 'JPush'
 
 end
