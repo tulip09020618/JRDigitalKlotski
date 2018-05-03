@@ -11,6 +11,7 @@
 		65170DB42090AC9E003C7E52 /* JRDigitalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 65170DB32090AC9E003C7E52 /* JRDigitalModel.m */; };
 		65170DB82090B879003C7E52 /* JRDigitalKlotskiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65170DB72090B879003C7E52 /* JRDigitalKlotskiView.m */; };
 		65170DBB2090B887003C7E52 /* JRDigitalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65170DBA2090B887003C7E52 /* JRDigitalView.m */; };
+		65861DEC209AA99800610DD1 /* selectBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 65861DEB209AA99800610DD1 /* selectBack.png */; };
 		65C2A14120908D4500266000 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2A14020908D4500266000 /* AppDelegate.m */; };
 		65C2A14420908D4500266000 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C2A14320908D4500266000 /* ViewController.m */; };
 		65C2A14720908D4500266000 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65C2A14520908D4500266000 /* Main.storyboard */; };
@@ -43,7 +44,6 @@
 		65F033DE2092D14B00965DBF /* football05.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033DB2092D14A00965DBF /* football05.png */; };
 		65F033DF2092D14B00965DBF /* football06.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033DC2092D14A00965DBF /* football06.png */; };
 		65F033E02092D14B00965DBF /* levelBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033DD2092D14A00965DBF /* levelBack.png */; };
-		65F033E22092D88000965DBF /* selectBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033E12092D88000965DBF /* selectBack.png */; };
 		65F033E42092E12000965DBF /* launchImg.png in Resources */ = {isa = PBXBuildFile; fileRef = 65F033E32092E12000965DBF /* launchImg.png */; };
 		7F4AEA1441809205DF89CE9A /* libPods-JRDigitalKlotski.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 684F43B01F2F7403A8D5FC72 /* libPods-JRDigitalKlotski.a */; };
 /* End PBXBuildFile section */
@@ -78,6 +78,7 @@
 		65170DBA2090B887003C7E52 /* JRDigitalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRDigitalView.m; sourceTree = "<group>"; };
 		65170DBC2090BA3B003C7E52 /* Help.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Help.h; sourceTree = "<group>"; };
 		65861DDA209AA03800610DD1 /* JRDigitalKlotski.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JRDigitalKlotski.entitlements; sourceTree = "<group>"; };
+		65861DEB209AA99800610DD1 /* selectBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectBack.png; sourceTree = "<group>"; };
 		65C2A13C20908D4500266000 /* JRDigitalKlotski.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JRDigitalKlotski.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65C2A13F20908D4500266000 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		65C2A14020908D4500266000 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -126,7 +127,6 @@
 		65F033DB2092D14A00965DBF /* football05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football05.png; sourceTree = "<group>"; };
 		65F033DC2092D14A00965DBF /* football06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = football06.png; sourceTree = "<group>"; };
 		65F033DD2092D14A00965DBF /* levelBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = levelBack.png; sourceTree = "<group>"; };
-		65F033E12092D88000965DBF /* selectBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selectBack.png; sourceTree = "<group>"; };
 		65F033E32092E12000965DBF /* launchImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImg.png; sourceTree = "<group>"; };
 		684F43B01F2F7403A8D5FC72 /* libPods-JRDigitalKlotski.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JRDigitalKlotski.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E732DE43E5E3E4B78A2D06B8 /* Pods-JRDigitalKlotski.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JRDigitalKlotski.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JRDigitalKlotski/Pods-JRDigitalKlotski.debug.xcconfig"; sourceTree = "<group>"; };
@@ -292,7 +292,6 @@
 			isa = PBXGroup;
 			children = (
 				65F033E32092E12000965DBF /* launchImg.png */,
-				65F033E12092D88000965DBF /* selectBack.png */,
 				65F033DB2092D14A00965DBF /* football05.png */,
 				65F033DC2092D14A00965DBF /* football06.png */,
 				65F033DD2092D14A00965DBF /* levelBack.png */,
@@ -304,6 +303,7 @@
 				65F033C92092B98300965DBF /* football03.png */,
 				65F033CA2092B98400965DBF /* football04.png */,
 				65E9828020919690009A81A2 /* football.png */,
+				65861DEB209AA99800610DD1 /* selectBack.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -432,6 +432,7 @@
 				65C2A14C20908D4C00266000 /* LaunchScreen.storyboard in Resources */,
 				65F033D42092C25400965DBF /* goback.png in Resources */,
 				65F033CD2092B98400965DBF /* football03.png in Resources */,
+				65861DEC209AA99800610DD1 /* selectBack.png in Resources */,
 				65EF163F2091FE370062750B /* JRCustomViewController.xib in Resources */,
 				65F033D32092C25400965DBF /* help.png in Resources */,
 				65C2A14920908D4C00266000 /* Assets.xcassets in Resources */,
@@ -447,7 +448,6 @@
 				65EF162A2091F9920062750B /* JRSelectLevelViewController.xib in Resources */,
 				65C2A14720908D4500266000 /* Main.storyboard in Resources */,
 				65F033C82092A47200965DBF /* JRCustomLevelViewController.xib in Resources */,
-				65F033E22092D88000965DBF /* selectBack.png in Resources */,
 				65EF16442091FE480062750B /* JRIntroductionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

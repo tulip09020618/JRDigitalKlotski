@@ -85,8 +85,14 @@
         rows = 8;
     }else if (self.levelIndex < 95) {
         rows = 9;
-    }else {
+    }else if (self.levelIndex < 100) {
         rows = 10;
+    }else if (self.levelIndex < 110) {
+        rows = 11;
+    }else if (self.levelIndex < 120) {
+        rows = 12;
+    }else {
+        rows = 13;
     }
     cols = rows;
     
